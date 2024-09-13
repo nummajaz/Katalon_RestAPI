@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>DeleteUser</name>
+   <name>DeleteUsers</name>
    <tag></tag>
    <elementGuidId>6eead617-ef19-4485-9f8f-356b5f10f3bb</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>

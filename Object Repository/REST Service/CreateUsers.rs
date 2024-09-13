@@ -7,16 +7,25 @@
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <autoUpdateContent>false</autoUpdateContent>
+   <autoUpdateContent>true</autoUpdateContent>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;name\&quot;: \&quot;Benecdictus Aramadya\&quot;,\n    \&quot;job\&quot;: \&quot;leader\&quot;\n}&quot;,
-  &quot;contentType&quot;: &quot;text/plain&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
+  &quot;contentType&quot;: &quot;application/x-www-form-urlencoded&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;,
+  &quot;parameters&quot;: [
+    {
+      &quot;name&quot;: &quot;name&quot;,
+      &quot;value&quot;: &quot;Aliyudin&quot;
+    },
+    {
+      &quot;name&quot;: &quot;job&quot;,
+      &quot;value&quot;: &quot;Lead&quot;
+    }
+  ]
 }</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
+   <httpBodyType>x-www-form-urlencoded</httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
@@ -56,6 +65,9 @@ ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
 WS.verifyResponseStatusCode(response, 201)
 
-assertThat(response.getStatusCode()).isEqualTo(201)</verificationScript>
+assertThat(response.getStatusCode()).isEqualTo(201)
+
+
+RequestObject request = WSResponseManager.getInstance().getCurrentRequest()</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

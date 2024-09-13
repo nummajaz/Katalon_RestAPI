@@ -47,6 +47,9 @@ WS.verifyResponseStatusCode(response, 200)
 
 assertThat(response.getStatusCode()).isEqualTo(200)
 
-</verificationScript>
+
+
+
+assertThat(response.getResponseText()).isEqualTo(&quot;Katalon Test Project&quot;)</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>
